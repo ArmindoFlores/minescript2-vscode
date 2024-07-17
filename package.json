@@ -1,0 +1,25 @@
+{
+  "name": "minescript2-lang",
+  "displayName": "minescript2-lang",
+  "description": "Syntax highlighting for the MineScript2 language",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.91.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "minescript2",
+      "aliases": ["MineScript2", "minescript2"],
+      "extensions": [".ms"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "minescript2",
+      "scopeName": "source.minescript",
+      "path": "./syntaxes/minescript2.tmLanguage.json"
+    }]
+  }
+}
